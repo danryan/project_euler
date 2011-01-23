@@ -1,3 +1,9 @@
+# 2520 is the smallest number that can be divided by each of the numbers from 1 to
+# 10 without any remainder.
+# 
+# What is the smallest positive number that is evenly divisible by all of 
+# the numbers from 1 to 20?
+
 # puts "With programming:"
 # count = 1
 # keep_going = true
@@ -20,11 +26,8 @@
 #   next
 # end
 
-# require 'rational'
 num = (1..20).inject(1) { |result, n| result.lcm n }
 puts "Smallest evenly divisible number is #{ num }."
-
-puts
 
 # No programing, just compute the prime factorization of each number from 1-20
 # and multiply the greatest power of each prime together:
